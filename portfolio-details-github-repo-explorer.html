@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Restrogreen POS App - Portfolio Details | Ahsan Habib Rasel</title>
-  <meta content="Explore the Restrogreen POS App, an Android Studio-based point-of-sale solution for restaurant management by MD Ahsan Habib Rasel." name="description">
-  <meta content="Restrogreen POS, Android app, restaurant management, point of sale, Ahsan Habib Rasel, software engineer" name="keywords">
+  <title>GitHub Repository Explorer - Portfolio Details | Ahsan Habib Rasel</title>
+  <meta content="Explore GitHub Repository Explorer, a Flutter-based app by MD Ahsan Habib Rasel for browsing GitHub repositories with offline support." name="description">
+  <meta content="GitHub Repository Explorer, Flutter app, GitHub API, Provider, offline caching, Ahsan Habib Rasel, software engineer" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -27,13 +27,33 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Custom CSS for Image Sizing -->
+  <style>
+    .portfolio-details-slider .swiper-slide img {
+      max-width: 100%;
+      max-height: 400px; /* Adjust this value to your preference */
+      object-fit: contain; /* Keeps aspect ratio, fits within bounds */
+      display: block;
+      margin: 0 auto; /* Centers the image */
+    }
+    .portfolio-details-slider .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto; /* Allows the slide to adjust to image size */
+    }
+    .portfolio-item .portfolio-content img {
+      max-width: 100%;
+      max-height: 250px; /* Adjust this value to your preference */
+      object-fit: contain; /* Maintains aspect ratio, fits within bounds */
+      display: block;
+      margin: 0 auto; /* Centers the image */
+    }
+    .portfolio-item .portfolio-content {
+      height: auto; /* Allows container to adjust to image size */
+    }
+  </style>
+
 </head>
 
 <body class="portfolio-details-page">
@@ -75,7 +95,7 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Restrogreen POS App</h1>
+        <h1 class="mb-2 mb-lg-0">GitHub Repository Explorer</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -114,15 +134,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img  src="assets/img/portfolio/restrogreen-pos-swipe.jpg" alt="Restrogreen POS App Screenshot 1">
+                  <img src="assets/img/portfolio/repo-expo.jpeg" alt="GitHub Repository Explorer Screenshot 1">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/restrogreen-pos-swipe1.jpg" alt="Restrogreen POS App Screenshot 2">
+                  <img src="assets/img/portfolio/repo-expo2.jpeg" alt="GitHub Repository Explorer Screenshot 2">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/restrogreen-pos-swipe2.jpg" alt="Restrogreen POS App Screenshot 3">
+                  <img src="assets/img/portfolio/repo-expo3.jpeg" alt="GitHub Repository Explorer Screenshot 3">
                 </div>
 
               </div>
@@ -134,16 +154,16 @@
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Category</strong>: Mobile App (POS)</li>
-                <li><strong>Client</strong>: Fronture Technologies Ltd.</li>
-                <li><strong>Project Date</strong>: July 2024 - Present</li>
-                <li><strong>Project URL</strong>: <a href="https://play.google.com/store/apps/details?id=com.quicklyservices.restaurants">Google Play Store</a></li>
+                <li><strong>Category</strong>: Mobile App (Personal Project)</li>
+                <li><strong>Client</strong>: Self-initiated</li>
+                <li><strong>Project Date</strong>: 2023</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/rasel3413/GitHub-Repository-Explorer">GitHub Repository</a></li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Restrogreen POS App</h2>
+              <h2>GitHub Repository Explorer</h2>
               <p>
-                Restrogreen POS App is an Android Studio-based point-of-sale solution designed for restaurant management. Built with Kotlin and integrated with a Laravel backend, this app streamlines operations with features like order processing, inventory tracking, payment integrations, and CRM tools. As a Software Engineer L1 at Fronture Technologies Ltd., I contributed to its development and maintenance, enhancing stability and adding key functionalities to improve the user experience for restaurant staff and owners.
+                GitHub Repository Explorer is a Flutter application designed to explore GitHub repositories seamlessly. It leverages the Provider package for efficient state management, integrates HTTP requests to the GitHub API for fetching real-time repository data, and supports offline browsing through local caching. As a self-initiated project, I built this app to enhance my skills in Flutter development, API integration, and offline functionality, delivering a user-friendly experience for developers and GitHub enthusiasts.
               </p>
             </div>
           </div>
