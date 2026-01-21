@@ -5,17 +5,22 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>JU Blood Bank - Portfolio Details | Ahsan Habib Rasel</title>
-  <meta content="Discover JU Blood Bank, an Android Studio-based app for blood donation management by MD Ahsan Habib Rasel, built as a personal project." name="description">
-  <meta content="JU Blood Bank, Android app, blood donation, Kotlin, Firebase, Ahsan Habib Rasel, software engineer" name="keywords">
+  <meta
+    content="Discover JU Blood Bank, an Android Studio-based app for blood donation management by MD Ahsan Habib Rasel, built as a personal project."
+    name="description">
+  <meta content="JU Blood Bank, Android app, blood donation, Kotlin, Firebase, Ahsan Habib Rasel, software engineer"
+    name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/faviconr.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,162 +31,210 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- Custom CSS for Image Sizing -->
-  <style>
-    .portfolio-details-slider .swiper-slide img {
-      max-width: 100%;
-      max-height: 400px; /* Adjust this value to your preference */
-      object-fit: contain; /* Keeps aspect ratio, fits within bounds */
-      display: block;
-      margin: 0 auto; /* Centers the image */
-    }
-    .portfolio-details-slider .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: auto; /* Allows the slide to adjust to image size */
-    }
-  </style>
-
-  
 </head>
 
 <body class="portfolio-details-page">
 
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Ahsan Habib Rasel</a>
 
-    <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Ahsan Habib Rasel</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-      <a href="https://linkedin.com/in/rasel3413" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      <ul class="navbar-nav">
+        <li><a href="index.html#hero" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
       </ul>
-    </nav>
 
-  </header>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </nav>
 
   <main class="main">
-
     <!-- Page Title -->
-    <div class="page-title dark-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">JU Blood Bank</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
-          </ol>
-        </nav>
+    <section class="page-title-section">
+      <div class="container">
+        <div class="page-title-content">
+          <h1 class="page-title">JU Blood Bank</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#portfolio">Portfolio</a></li>
+              <li class="current">JU Blood Bank</li>
+            </ol>
+          </nav>
+        </div>
       </div>
-    </div><!-- End Page Title -->
+    </section><!-- End Page Title -->
 
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+      <div class="container">
         <div class="row gy-4">
-
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
-
               <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
                   "speed": 600,
                   "autoplay": {
-                    "delay": 1000
+                    "delay": 3000
                   },
                   "slidesPerView": "auto",
                   "pagination": {
                     "el": ".swiper-pagination",
                     "type": "bullets",
                     "clickable": true
+                  },
+                  "navigation": {
+                    "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"
                   }
                 }
               </script>
 
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ju-blood-bank.jpeg" alt="JU Blood Bank Screenshot 1">
+                  <img src="assets/img/portfolio/ju-blood-bank.jpeg" alt="JU Blood Bank Screenshot 1" loading="lazy">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ju-blood-bank1.jpeg" alt="JU Blood Bank Screenshot 2">
+                  <img src="assets/img/portfolio/ju-blood-bank1.jpeg" alt="JU Blood Bank Screenshot 2" loading="lazy">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ju-blood-bank2.jpeg" alt="JU Blood Bank Screenshot 3">
+                  <img src="assets/img/portfolio/ju-blood-bank2.jpeg" alt="JU Blood Bank Screenshot 3" loading="lazy">
                 </div>
-
               </div>
               <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Category</strong>: Mobile App (Personal Project)</li>
-                <li><strong>Client</strong>: Self-initiated</li>
-                <li><strong>Project Date</strong>: 2022 - 2023</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/rasel3413/JUBloodBank/tree/master">GitHub Repository</a></li>
+            <div class="portfolio-info glass-card" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="section-title">Project Information</h3>
+              <ul class="info-list">
+                <li><strong>Category:</strong> Mobile App (Personal Project)</li>
+                <li><strong>Client:</strong> Self-initiated</li>
+                <li><strong>Project Date:</strong> 2022 - 2023</li>
+                <li><strong>Platform:</strong> Android</li>
+                <li><strong>Technologies:</strong> Kotlin, Firebase, Android Studio</li>
+                <li><strong>Project URL:</strong> <a href="https://github.com/rasel3413/JUBloodBank/tree/master"
+                    target="_blank" class="project-link">GitHub Repository <i class="bi bi-arrow-up-right"></i></a></li>
               </ul>
             </div>
+
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>JU Blood Bank</h2>
-              <p>
-                JU Blood Bank is a personal Android app developed in Android Studio using Kotlin and Firebase, aimed at facilitating blood donation within the Jahangirnagar University community. This app allows users to search for blood donors by blood group, location, and availability, with real-time updates powered by Firebase. As a self-initiated project, I designed and built it to address a real-world need, implementing features like user authentication, donor profiles, and a responsive UI to ensure accessibility and ease of use.
+              <h2 class="project-title">JU Blood Bank</h2>
+              <p class="project-intro">
+                JU Blood Bank is a comprehensive Android application developed to facilitate blood donation within the
+                Jahangirnagar University community. Built with Kotlin and powered by Firebase, this app serves as a
+                vital bridge between blood donors and recipients in emergency situations.
               </p>
+              <p class="project-details">
+                The application features real-time donor search capabilities, user authentication, comprehensive donor
+                profiles, and an intuitive interface designed to ensure accessibility and ease of use during critical
+                moments.
+              </p>
+
+              <div class="project-features" data-aos="fade-up" data-aos-delay="400">
+                <h4 class="features-title">Key Features:</h4>
+                <ul class="features-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Blood donor search by group and location</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Real-time availability updates</li>
+                  <li><i class="bi bi-check-circle-fill"></i> User authentication and profiles</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Emergency contact integration</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Donor history and statistics</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Offline data synchronization</li>
+                </ul>
+              </div>
+
+              <div class="tech-stack" data-aos="fade-up" data-aos-delay="500">
+                <h4 class="tech-stack-title">Technology Stack:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">Kotlin</span>
+                  <span class="tech-tag">Android Studio</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Room Database</span>
+                  <span class="tech-tag">Material Design</span>
+                  <span class="tech-tag">Google Maps API</span>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /Portfolio Details Section -->
-
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-
+  <footer id="footer" class="footer">
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ahsan Habib Rasel</strong> <span>All Rights Reserved</span></p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Ahsan Habib Rasel</h3>
+          <p class="footer-description">
+            Passionate software engineer specializing in mobile and web development.
+            Creating innovative solutions with modern technologies.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/rasel3413" class="social-link" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rasel3413/" class="social-link" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:rasel341313@gmail.com" class="social-link" aria-label="Email">
+              <i class="bi bi-envelope"></i>
+            </a>
+            <a href="https://www.facebook.com/AhsanH1Rasel/" class="social-link" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-subtitle">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-subtitle">Contact Info</h4>
+          <ul class="contact-info">
+            <li><i class="bi bi-envelope"></i> rasel341313@gmail.com</li>
+            <li><i class="bi bi-geo-alt"></i> Dhaka, Bangladesh</li>
+            <li><i class="bi bi-clock"></i> Available for projects</li>
+          </ul>
+        </div>
       </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>© <span>Copyright</span> <strong class="sitename">Ahsan Habib Rasel</strong> <span>All Rights
+              Reserved</span></p>
+        </div>
+        <div class="credits">
+          Designed with ❤️ by Ahsan Habib Rasel
+        </div>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -200,7 +253,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

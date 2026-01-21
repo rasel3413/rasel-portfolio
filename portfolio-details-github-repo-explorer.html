@@ -5,17 +5,23 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>GitHub Repository Explorer - Portfolio Details | Ahsan Habib Rasel</title>
-  <meta content="Explore GitHub Repository Explorer, a Flutter-based app by MD Ahsan Habib Rasel for browsing GitHub repositories with offline support." name="description">
-  <meta content="GitHub Repository Explorer, Flutter app, GitHub API, Provider, offline caching, Ahsan Habib Rasel, software engineer" name="keywords">
+  <meta
+    content="Explore GitHub Repository Explorer, a Flutter-based app by MD Ahsan Habib Rasel for browsing GitHub repositories with offline support."
+    name="description">
+  <meta
+    content="GitHub Repository Explorer, Flutter app, GitHub API, Provider, offline caching, Ahsan Habib Rasel, software engineer"
+    name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/faviconr.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,171 +32,218 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- Custom CSS for Image Sizing -->
-  <style>
-    .portfolio-details-slider .swiper-slide img {
-      max-width: 100%;
-      max-height: 400px; /* Adjust this value to your preference */
-      object-fit: contain; /* Keeps aspect ratio, fits within bounds */
-      display: block;
-      margin: 0 auto; /* Centers the image */
-    }
-    .portfolio-details-slider .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: auto; /* Allows the slide to adjust to image size */
-    }
-    .portfolio-item .portfolio-content img {
-      max-width: 100%;
-      max-height: 250px; /* Adjust this value to your preference */
-      object-fit: contain; /* Maintains aspect ratio, fits within bounds */
-      display: block;
-      margin: 0 auto; /* Centers the image */
-    }
-    .portfolio-item .portfolio-content {
-      height: auto; /* Allows container to adjust to image size */
-    }
-  </style>
-
 </head>
 
 <body class="portfolio-details-page">
 
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Ahsan Habib Rasel</a>
 
-    <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Ahsan Habib Rasel</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-      <a href="https://linkedin.com/in/rasel3413" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      <ul class="navbar-nav">
+        <li><a href="index.html#hero" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
       </ul>
-    </nav>
 
-  </header>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </nav>
 
   <main class="main">
-
     <!-- Page Title -->
-    <div class="page-title dark-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">GitHub Repository Explorer</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
-          </ol>
-        </nav>
+    <section class="page-title-section">
+      <div class="container">
+        <div class="page-title-content">
+          <h1 class="page-title">GitHub Repository Explorer</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#portfolio">Portfolio</a></li>
+              <li class="current">GitHub Repository Explorer</li>
+            </ol>
+          </nav>
+        </div>
       </div>
-    </div><!-- End Page Title -->
+    </section><!-- End Page Title -->
 
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+      <div class="container">
         <div class="row gy-4">
-
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
-
               <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
                   "speed": 600,
                   "autoplay": {
-                    "delay": 1000
+                    "delay": 3000
                   },
                   "slidesPerView": "auto",
                   "pagination": {
                     "el": ".swiper-pagination",
                     "type": "bullets",
                     "clickable": true
+                  },
+                  "navigation": {
+                    "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"
                   }
                 }
               </script>
 
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/repo-expo.jpeg" alt="GitHub Repository Explorer Screenshot 1">
+                  <img src="assets/img/portfolio/repo-expo.jpeg" alt="GitHub Repository Explorer Screenshot 1"
+                    loading="lazy">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/repo-expo2.jpeg" alt="GitHub Repository Explorer Screenshot 2">
+                  <img src="assets/img/portfolio/repo-expo1.jpeg" alt="GitHub Repository Explorer Screenshot 2"
+                    loading="lazy">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/repo-expo3.jpeg" alt="GitHub Repository Explorer Screenshot 3">
+                  <img src="assets/img/portfolio/repo-expo2.jpeg" alt="GitHub Repository Explorer Screenshot 3"
+                    loading="lazy">
                 </div>
-
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/repo-expo3.jpeg" alt="GitHub Repository Explorer Screenshot 4"
+                    loading="lazy">
+                </div>
               </div>
               <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Category</strong>: Mobile App (Personal Project)</li>
-                <li><strong>Client</strong>: Self-initiated</li>
-                <li><strong>Project Date</strong>: 2023</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/rasel3413/GitHub-Repository-Explorer">GitHub Repository</a></li>
+            <div class="portfolio-info glass-card" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="section-title">Project Information</h3>
+              <ul class="info-list">
+                <li><strong>Category:</strong> Mobile App (Personal Project)</li>
+                <li><strong>Client:</strong> Self-initiated</li>
+                <li><strong>Project Date:</strong> 2023</li>
+                <li><strong>Platform:</strong> Android & iOS</li>
+                <li><strong>Technologies:</strong> Flutter, Dart, GitHub API</li>
+                <li><strong>Project URL:</strong> <a href="https://github.com/rasel3413/GitHub-Repository-Explorer"
+                    target="_blank" class="project-link">GitHub Repository <i class="bi bi-arrow-up-right"></i></a></li>
               </ul>
             </div>
+
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>GitHub Repository Explorer</h2>
-              <p>
-                GitHub Repository Explorer is a Flutter application designed to explore GitHub repositories seamlessly. It leverages the Provider package for efficient state management, integrates HTTP requests to the GitHub API for fetching real-time repository data, and supports offline browsing through local caching. As a self-initiated project, I built this app to enhance my skills in Flutter development, API integration, and offline functionality, delivering a user-friendly experience for developers and GitHub enthusiasts.
+              <h2 class="project-title">GitHub Repository Explorer</h2>
+              <p class="project-intro">
+                GitHub Repository Explorer is a sophisticated Flutter application designed to provide developers with a
+                seamless experience for exploring GitHub repositories. The app leverages modern Flutter architecture
+                with Provider for efficient state management and integrates with the GitHub API to fetch real-time
+                repository data.
               </p>
+              <p class="project-details">
+                Key features include offline browsing capabilities through local caching, advanced search and filtering
+                options, repository bookmarking, and detailed repository information display including stars, forks,
+                issues, and contributor statistics.
+              </p>
+
+              <div class="project-features" data-aos="fade-up" data-aos-delay="400">
+                <h4 class="features-title">Key Features:</h4>
+                <ul class="features-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Real-time GitHub repository search</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Offline caching for seamless browsing</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Advanced filtering and sorting</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Repository bookmarking system</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Detailed repository analytics</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Dark/Light theme support</li>
+                </ul>
+              </div>
+
+              <div class="tech-stack" data-aos="fade-up" data-aos-delay="500">
+                <h4 class="tech-stack-title">Technology Stack:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">Dart</span>
+                  <span class="tech-tag">Provider</span>
+                  <span class="tech-tag">GitHub API</span>
+                  <span class="tech-tag">SQLite</span>
+                  <span class="tech-tag">HTTP</span>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /Portfolio Details Section -->
-
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-
+  <footer id="footer" class="footer">
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ahsan Habib Rasel</strong> <span>All Rights Reserved</span></p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Ahsan Habib Rasel</h3>
+          <p class="footer-description">
+            Passionate software engineer specializing in mobile and web development.
+            Creating innovative solutions with modern technologies.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/rasel3413" class="social-link" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rasel3413/" class="social-link" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:rasel341313@gmail.com" class="social-link" aria-label="Email">
+              <i class="bi bi-envelope"></i>
+            </a>
+            <a href="https://www.facebook.com/AhsanH1Rasel/" class="social-link" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-subtitle">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-subtitle">Contact Info</h4>
+          <ul class="contact-info">
+            <li><i class="bi bi-envelope"></i> rasel341313@gmail.com</li>
+            <li><i class="bi bi-geo-alt"></i> Dhaka, Bangladesh</li>
+            <li><i class="bi bi-clock"></i> Available for projects</li>
+          </ul>
+        </div>
       </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>© <span>Copyright</span> <strong class="sitename">Ahsan Habib Rasel</strong> <span>All Rights
+              Reserved</span></p>
+        </div>
+        <div class="credits">
+          Designed with ❤️ by Ahsan Habib Rasel
+        </div>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -209,7 +262,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
