@@ -267,6 +267,25 @@ body.hovering .cursor-dot-outline {
   transform: translateY(-3px);
 }
 
+.btn-ghost {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 0.75rem 1.25rem;
+}
+
+.btn-ghost:hover {
+  color: var(--neon-cyan);
+  transform: translateY(-3px);
+}
+
+.about-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
 /*--------------------------------------------------------------
 # Particles Background
 --------------------------------------------------------------*/
