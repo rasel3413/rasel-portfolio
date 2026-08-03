@@ -341,8 +341,14 @@ body.hovering .cursor-dot-outline {
 
 .navbar-nav {
   display: flex;
+  flex-direction: row;
+  /* Override Bootstrap's .navbar-nav { flex-direction: column } which
+     stacks the links vertically on detail pages (Bootstrap CSS is loaded
+     there but not on index) — a 400px+ tall navbar that blocks the view. */
   list-style: none;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
