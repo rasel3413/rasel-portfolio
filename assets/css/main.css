@@ -1273,3 +1273,157 @@ body.hovering .cursor-dot-outline {
     transform: translate3d(0, 0, 0);
   }
 }
+
+/*--------------------------------------------------------------
+# Project Details Page
+--------------------------------------------------------------*/
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: var(--transition-smooth);
+}
+
+.glass-card:hover {
+  border-color: var(--neon-blue);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.page-title-section {
+  padding: 120px 0 60px;
+  position: relative;
+  z-index: 10;
+}
+
+.page-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.breadcrumbs {
+  margin-bottom: 2rem;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 1rem;
+  position: relative;
+}
+
+.breadcrumbs ol li+li::before {
+  content: "/";
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+}
+
+.breadcrumbs a {
+  color: var(--text-muted);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs .current {
+  color: var(--neon-cyan);
+}
+
+.portfolio-details-slider {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+}
+
+.portfolio-details .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--neon-cyan);
+  opacity: 1;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.info-list li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+  min-width: 120px;
+}
+
+.project-link {
+  color: var(--neon-cyan);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.project-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.project-intro {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.project-details {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.features-list,
+.tech-tags {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.features-list li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.features-list li i {
+  color: var(--neon-cyan);
+}

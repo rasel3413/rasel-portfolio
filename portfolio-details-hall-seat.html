@@ -11,6 +11,7 @@
   <meta
     content="Hall Seat Project Management, Django, Bootstrap, web app, hostel management, Ahsan Habib Rasel, software engineer"
     name="keywords">
+  <meta name="author" content="Ahsan Habib Rasel">
 
   <!-- Favicons -->
   <link href="assets/img/faviconr.ico" rel="icon">
@@ -20,32 +21,48 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <!-- Libraries -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="portfolio-details-page">
+<body>
+
+  <!-- Background Animation Container -->
+  <div id="particles-js"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot-outline"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-spinner"></div>
+    </div>
+  </div>
 
   <!-- Navigation -->
-  <nav id="navbar" class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="index.html" class="navbar-brand">Ahsan Habib Rasel</a>
+      <a href="index.html" class="navbar-brand">
+        <span class="logo-text">Ahsan<span class="text-primary">.dev</span></span>
+      </a>
 
       <ul class="navbar-nav">
         <li><a href="index.html#hero" class="nav-link">Home</a></li>
         <li><a href="index.html#about" class="nav-link">About</a></li>
-        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
-        <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="index.html#skills" class="nav-link">Stack</a></li>
+        <li><a href="index.html#portfolio" class="nav-link">Work</a></li>
         <li><a href="index.html#services" class="nav-link">Services</a></li>
         <li><a href="index.html#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -65,7 +82,7 @@
           <nav class="breadcrumbs">
             <ol>
               <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#portfolio">Portfolio</a></li>
+              <li><a href="index.html#portfolio">Work</a></li>
               <li class="current">Hall Seat Management</li>
             </ol>
           </nav>
@@ -124,46 +141,46 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info glass-card" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="section-title">Project Information</h3>
+            <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="section-title" style="text-align: left; margin-bottom: 1.5rem; font-size: 1.5rem;">Project Info
+              </h3>
               <ul class="info-list">
-                <li><strong>Category:</strong> Web Application (Personal Project)</li>
-                <li><strong>Client:</strong> Self-initiated</li>
-                <li><strong>Project Date:</strong> 2023</li>
-                <li><strong>Platform:</strong> Web Browser</li>
-                <li><strong>Technologies:</strong> Django, Bootstrap, PostgreSQL</li>
-                <li><strong>Project URL:</strong> <a href="https://github.com/rasel3413/hall-seat-management-"
-                    target="_blank" class="project-link">GitHub Repository <i class="bi bi-arrow-up-right"></i></a></li>
+                <li><strong>Category:</strong> <span>Web App (Personal)</span></li>
+                <li><strong>Client:</strong> <span>Self-initiated</span></li>
+                <li><strong>Date:</strong> <span>2023</span></li>
+                <li><strong>Platform:</strong> <span>Web Browser</span></li>
+                <li><strong>Tech:</strong> <span>Django, Bootstrap, PostgreSQL</span></li>
+                <li><strong>URL:</strong> <a href="https://github.com/rasel3413/hall-seat-management-" target="_blank"
+                    class="project-link">GitHub Repo <i class="bi bi-arrow-up-right"></i></a></li>
               </ul>
             </div>
 
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2 class="project-title">Hall Seat Management System</h2>
+            <div class="glass-card" style="margin-top: 2rem;" data-aos="fade-up" data-aos-delay="300">
+              <h2 class="project-title" style="font-size: 1.8rem;">Project Overview</h2>
               <p class="project-intro">
                 Hall Seat Management System is a comprehensive Django-based web application designed to streamline
-                university hostel operations. The system efficiently handles room allocation, manages student
-                complaints, and provides robust tools for effective room management.
+                university hostel operations.
               </p>
               <p class="project-details">
-                Built during my university years to address real-world hostel management challenges, this project
-                demonstrates my ability to create practical solutions using modern web technologies and database design
-                principles.
+                The system efficiently handles room allocation, manages student
+                complaints, and provides robust tools for effective room management. Built during my university years to
+                address real-world challenges.
               </p>
 
-              <div class="project-features" data-aos="fade-up" data-aos-delay="400">
-                <h4 class="features-title">Key Features:</h4>
+              <div class="project-features" style="margin-top: 2rem;">
+                <h4 class="features-title" style="color: var(--text-primary); margin-bottom: 1rem;">Key Features:</h4>
                 <ul class="features-list">
-                  <li><i class="bi bi-check-circle-fill"></i> Automated room allocation system</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Student complaint management</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Automated room allocation</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Complaint management</li>
                   <li><i class="bi bi-check-circle-fill"></i> Room availability tracking</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Admin dashboard for management</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Student profile management</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Reporting and analytics</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Admin dashboard</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Student profiles</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Reporting & analytics</li>
                 </ul>
               </div>
 
-              <div class="tech-stack" data-aos="fade-up" data-aos-delay="500">
-                <h4 class="tech-stack-title">Technology Stack:</h4>
+              <div class="tech-stack" style="margin-top: 2rem;">
+                <h4 class="tech-stack-title" style="color: var(--text-primary); margin-bottom: 1rem;">Tech Stack:</h4>
                 <div class="tech-tags">
                   <span class="tech-tag">Django</span>
                   <span class="tech-tag">Python</span>
@@ -178,89 +195,42 @@
         </div>
       </div>
     </section><!-- /Portfolio Details Section -->
+
   </main>
 
-  <footer id="footer" class="footer">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-section">
-          <h3 class="footer-title">Ahsan Habib Rasel</h3>
-          <p class="footer-description">
-            Passionate software engineer specializing in mobile and web development.
-            Creating innovative solutions with modern technologies.
-          </p>
-          <div class="social-links">
-            <a href="https://github.com/rasel3413" class="social-link" aria-label="GitHub">
-              <i class="bi bi-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/rasel3413/" class="social-link" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="mailto:rasel341313@gmail.com" class="social-link" aria-label="Email">
-              <i class="bi bi-envelope"></i>
-            </a>
-            <a href="https://www.facebook.com/AhsanH1Rasel/" class="social-link" aria-label="Facebook">
-              <i class="bi bi-facebook"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-section">
-          <h4 class="footer-subtitle">Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html#hero">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#skills">Skills</a></li>
-            <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li><a href="index.html#services">Services</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h4 class="footer-subtitle">Contact Info</h4>
-          <ul class="contact-info">
-            <li><i class="bi bi-envelope"></i> rasel341313@gmail.com</li>
-            <li><i class="bi bi-geo-alt"></i> Dhaka, Bangladesh</li>
-            <li><i class="bi bi-clock"></i> Available for projects</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="copyright">
-          <p>© <span>Copyright</span> <strong class="sitename">Ahsan Habib Rasel</strong> <span>All Rights
-              Reserved</span></p>
-        </div>
-        <div class="credits">
-          Designed with ❤️ by Ahsan Habib Rasel
+        <p class="footer-text">
+          © 2026 Ahsan Habib Rasel. All rights reserved.
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/rasel3413" class="footer-link" target="_blank">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/rasel3413/" class="footer-link" target="_blank">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+          <a href="mailto:rasel341313@gmail.com" class="footer-link">
+            <i class="bi bi-envelope"></i> Email
+          </a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top">
-    <i class="bi bi-arrow-up"></i>
-  </a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Custom Scripts -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
